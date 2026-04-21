@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    top: 0;
+    width: 100%;
+    height: 3.5rem;
+    min-width: 30rem;
+    border-bottom: 2px solid gold;
+    position: fixed;
+    background-color: green;
+    z-index: 90;
+    
+   
+}
+.personal ul{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    list-style-type: none;
+    padding: 1rem;
+   
+}
+.personal ul a{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 600;
+    justify-content: center;
+    gap: 0;
+}
+.hamb{
+    display: none;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    align-self: flex-end;
+    padding: 1rem 1rem;
+}
+ img{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 5rem;
+    top: 0;
+    padding: 1 2.5rem;
+}
+.intro h1{
+    color: black;
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+    top: 3.5rem;
+
+}
+
+.me{
+    width: 100%;
+    height: 26rem;
+    background-color: rgb(168, 173, 158);
+   display: flex;
+   flex-direction: column;
+   margin-top: 6rem;
+   color: black;
+   justify-self: center;
+   align-items: center;
+   border: 1px solid gold;
+   color: green;
+}
+.me h2{
+    color: white;
+}
+.hero div >img{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 20rem;
+    top: 11rem;
+}
+.my-work{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.my-work a{
+    background-color: yellowgreen;
+    color: black;
+    align-self: center;
+    text-decoration: none;
+    height: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+}
+.my-work a:hover{
+    background-color: brown;
+    color: black;
+}
+.my-work button{
+    background-color: yellowgreen;
+    color: black;
+    align-self: center;
+    text-decoration: none;
+    height: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+}
+.my-work button:hover{
+    background-color: brown;
+    color: black;
+    border: 1px solid yellow;
+}
+.personal h2{
+background-color: yellow;
+color: green;
+font-weight: 600;
+justify-self: center;
+margin-top: 2rem;
+border-radius: 10px;
+padding: 1rem 2rem;
+font-weight: 700;
+font-size: larger;
+border: 6px solid brown;
+}
+
+.personal h2:hover{
+background-color: gold;
+color: black;
+
+
+}
+.container{
+    width: 100%;
+    margin: 0  auto;
+    max-width: 40rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 2rem;
+}
+.container div{
+   border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 2rem;
+    background-color: yellowgreen;
+    color: white;
+    font-weight: 800;
+    border: 6px solid brown;
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+    line-height: 1.5rem;
+}
+.container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    border-radius: 2rem;
+}
+.container div:nth-child(1){
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+}
+.container div:hover{
+    background-color: yellowgreen;
+    color: black;
+    font-weight: 800;
+    border: 5px solid brown;
+}
+
+.container div:nth-child(2):hover{
+    background-color: yellowgreen;
+    color: white;
+}
+.container div:nth-child(2){
+    background-color: yellowgreen;
+}
+.skills{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 60rem;
+    display: grid;
+    margin-top: 4rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 1rem;
+  
+}
+.skills div{
+    border: 1px solid black;
+    height: 10rem;
+    width: 15 rem;
+    background-color: yellow;
+    align-content: center;
+    padding: 2rem 4rem; 
+    border: 10px solid yellowgreen;
+    border-radius: 2rem;
+
+}
+.skills button{
+    width: 3rem;
+    height: 3rem;
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 5rem;
+}
+.skills div:hover{
+    background-color: white;
+
+}
+
+@media(max-width: 768px){
+    .hamb{
+    display: flex;
+    padding: 1rem 20rem;
+    
+    }
+.personal a{
+    display: none;
+       
+    }
+
+.container{
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  width: 15rem;
+ 
+}
+.skills{
+    grid-template-columns: 1fr;
+    width: 15rem;
+}
+    }
+    
+
+@media(max-width: 1000px){
+.personal ul{
+     display: flex;
+    }
+
+    }
