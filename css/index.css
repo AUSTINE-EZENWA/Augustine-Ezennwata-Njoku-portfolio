@@ -59,9 +59,10 @@ header{
 
 .me{
     width: 100%;
-    height: 26rem;
+    height: 15rem;
     background-color: rgb(168, 173, 158);
    display: flex;
+   position: relative;
    flex-direction: column;
    margin-top: 6rem;
    color: black;
@@ -69,18 +70,36 @@ header{
    align-items: center;
    border: 1px solid gold;
    color: green;
+   
 }
-.me h2{
-    color: white;
-}
-.hero div >img{
-    position: absolute;
-    display: flex;
+.me{
+     width: 100%;
+    height: 25rem;
+    background-image: url(../images/Austine_Native.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+     display: flex;
     flex-direction: column;
-    width: 20rem;
-    height: 20rem;
-    top: 11rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
 }
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 0, 0, 0.10);
+    z-index: 2;
+}
+.me h1, h2{
+    color: white;
+    justify-content: center;
+}
+
 .my-work{
     display: flex;
     flex-direction: row;
@@ -150,7 +169,7 @@ color: black;
     height: 100%;
     object-fit: cover;
     margin-top: 2rem;
-    background-color: yellowgreen;
+    background-color: blue;
     color: white;
     font-weight: 800;
     border: 6px solid brown;
@@ -181,7 +200,7 @@ color: black;
     color: white;
 }
 .container div:nth-child(2){
-    background-color: yellowgreen;
+    background-color: blue;
 }
 .skills{
     width: 100%;
@@ -201,7 +220,7 @@ color: black;
     background-color: yellow;
     align-content: center;
     padding: 2rem 4rem; 
-    border: 10px solid yellowgreen;
+    border: 10px solid blue;
     border-radius: 2rem;
 
 }
@@ -214,15 +233,168 @@ color: black;
 }
 .skills div:hover{
     background-color: white;
-
+}
+.projects{
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    margin-top: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 0.5rem 5rem;  
+}
+.projects div{
+    height: 15rem;
+    width: 30rem;
+    border: 1px solid yellowgreen;
+    right: 1rem;
+    justify-items: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    color: aqua;
+    overflow: scroll;
+}
+.card-1{
+    background-image: url(../images/pp.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.card-2{
+    color: black;
+}
+.card-2{
+    background-image: url(../images/pp1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.projects div:hover{
+    background-image: none;
+    background-color: brown;
+    color: white;
+    transform: rotate(0.5deg);
+    border-radius: 2rem; 
+}
+.intouch{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+    gap: 1rem;
+    left: 5rem;
+    padding: 1rem 3rem;
+    justify-content: center;
+}
+.intouch div{
+    width: 100%;
+    gap: 1rem;
+    justify-items: center;
+}
+.contact-me h3{
+    color: blue;
+}
+.contact-me{
+    color: blue;
+    background-color: greenyellow;
+}
+.form-container{
+    display: flex;
+    width: 40rem;
+    gap: 5rem;
+   
+}
+.contact-me form{
+    border: 3px solid green;
+    border-radius: 2rem;
+    gap: 2rem;
+    height: 21rem;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: brown;
+    color: white;
+    padding: 0.5rem 1rem;  
+}
+.name-container div{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+.message-container div{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+}
+.contact-me form input{
+    height: 2rem;
+    border: 3px solid green;
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+}
+.message-container textarea{
+    height: 4rem;
+    width: 100%;
+    border: 3px solid green;
+    border-radius: 0.8rem;
+    padding: 1rem 1rem;
+}
+.contact-me label{
+    font-size: x-large;
+    justify-self: center;
 }
 
+.contact-me button{
+    margin-top: 1rem;
+    background-color: green;
+    color: white;
+   height: 2rem;
+   width: 100%;
+   font-size: large;
+   border-radius: 0.8rem;
+   right: 5rem;
+}
+.contact-me button:hover{
+    background-color: brown;
+    border: none;
+}
+.social-media{
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    width: 20rem;
+    height: 20rem;
+    margin-top: 2rem;
+    padding: 1rem 10rem;
+}
+.social-media div{
+    gap: 1rem;
+    padding: 2rem 4rem;
+    justify-content: center;
+}
+footer{
+    background-color: darkslategrey;
+    height: 4rem;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
 @media(max-width: 768px){
     .hamb{
     display: flex;
     padding: 1rem 20rem;
     
-    }
+}
 .personal a{
     display: none;
        
@@ -238,7 +410,17 @@ color: black;
     grid-template-columns: 1fr;
     width: 15rem;
 }
-    }
+.projects{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+}
+.intouch{
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+  
+}
+}
     
 
 @media(max-width: 1000px){
