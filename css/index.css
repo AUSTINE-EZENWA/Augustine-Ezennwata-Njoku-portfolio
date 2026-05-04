@@ -62,7 +62,7 @@ header{
     height: 15rem;
     background-color: rgb(168, 173, 158);
    display: flex;
-   position: z;
+   position: relative;
    flex-direction: column;
    margin-top: 6rem;
    color: black;
@@ -287,40 +287,42 @@ color: black;
     transform: rotate(0.5deg);
     border-radius: 2rem; 
 }
+.contact-me{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70rem;
+    margin-top: 2rem;
+    padding: 0.5rem 5rem;
+}
 .intouch{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 1rem;
+    width: 70rem;
+    height: 20rem;
+    margin-top: 0;
     gap: 1rem;
     left: 5rem;
     padding: 1rem 3rem;
-    justify-content: center;
+    justify-self: center;
+    border: 1px solid black;
 }
 .intouch div{
-    width: 100%;
+    width:30rem;
     gap: 1rem;
-    justify-items: center;
+    justify-self: center;
+
 }
-.contact-me h3{
+.intouch h3{
     color: blue;
 }
-.contact-me{
-    color: blue;
-    background-color: greenyellow;
-}
-.form-container{
-    display: flex;
-    width: 40rem;
-    gap: 5rem;
    
-}
-.contact-me form{
+.form-container{
     border: 3px solid green;
     border-radius: 2rem;
     gap: 2rem;
     height: 21rem;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 0;
     background-color: brown;
     color: white;
     padding: 0.5rem 1rem;  
