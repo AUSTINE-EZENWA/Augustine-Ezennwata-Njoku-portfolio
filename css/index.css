@@ -371,15 +371,13 @@ button:hover{
 .social-media{
     border: none;
     display: grid;
-    grid-template-columns: 1fr;
-    flex-direction: column;
+    grid-template-rows: repeat(3, 1fr);
     width: 20rem;
-    height: 20rem;
     margin-top: 2rem;
-    padding: 1rem 10rem;
+    padding: 1rem 3rem;
 }
 .social-media div{
-    gap: 0;
+    gap: 1rem;
     justify-content: center;
 }
 footer{
