@@ -76,7 +76,7 @@ header{
 .me{
     width: 50%;
     height: 40rem;
-    background-image: url(../images/Austine_Native.jpg);
+    background-image: url(Austine_Native.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -233,6 +233,9 @@ color: black;
 }
 .skills div:hover{
     background-color: white;
+}
+.skills div h3{
+    color: white;
 }
 .projects{
     height: 100%;
